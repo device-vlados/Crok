@@ -1,0 +1,241 @@
+body, html {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  color: #000;
+  line-height: 18px;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1010px;
+  padding: 0 30px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.button {
+  padding: 11px 10px 10px 10px;
+  background: #27282D;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.3s;
+}
+.button:hover {
+  box-shadow: 6px 5px #E6FF28;
+  color: #E6FF28;
+}
+
+.btn {
+  padding: 11px 10px 10px 10px;
+  background: #fff;
+  border: 1px solid #27282D;
+  border-radius: 7px;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.3s;
+}
+.btn:hover {
+  box-shadow: 6px 5px #E6FF28;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  max-width: 677px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+}
+
+.header__top {
+  position: fixed;
+  top: 64px;
+  width: 100%;
+  z-index: 150;
+}
+
+.header__top-inner {
+  padding: 21px 38px 21px 32px;
+  background: #FFFFFF;
+  box-shadow: 3px 3px 8px 3px rgba(95, 0, 162, 0.17);
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top-logo {
+  background: url("../images/logo.svg") no-repeat;
+  width: 266px;
+  height: 59px;
+  transition: all 0.2s;
+}
+.header__top-logo:hover {
+  background: url("../images/logo-hover.svg") no-repeat;
+  width: 266px;
+  height: 59px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+.header__nav-item {
+  margin-right: 33px;
+  transition: all 0.3s;
+}
+.header__nav-item:hover {
+  color: #5F00A2;
+}
+.header__nav-link {
+  font-weight: 700;
+}
+
+.header__body {
+  padding: 230px 0 110px 0;
+}
+
+.header__body-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__heading-title {
+  margin-bottom: 42px;
+}
+.header__heading-text {
+  margin-bottom: 42px;
+}
+
+.header__row {
+  margin-bottom: 42px;
+}
+.header__row-list {
+  display: flex;
+  align-items: center;
+}
+.header__row-item {
+  display: flex;
+  align-items: center;
+  margin-right: 11px;
+}
+.header__row-item:last-child {
+  margin-right: 0;
+}
+.header__row-item img {
+  margin: 0 3px;
+}
+
+.header__btn-button {
+  margin-right: 31px;
+}
+
+.main__service {
+  padding: 0 0 0 0;
+}
+
+.service__heading {
+  margin-bottom: 42px;
+}
+.service__heading-title {
+  margin-bottom: 36px;
+  max-width: 639px;
+}
+.service__heading-text {
+  max-width: 677px;
+}
+
+.service__grid {
+  display: flex;
+  justify-content: center;
+}
+.service__grid-list {
+  display: grid;
+  grid-template: repeat(2, 400px)/repeat(2, 400px);
+  gap: 47px;
+}
+.service__grid-item {
+  padding: 52px 10px 88px 37px;
+  background-color: #EDEDED;
+  border-radius: 19px;
+  transition: all 0.3s;
+  position: relative;
+}
+.service__grid-item:hover {
+  box-shadow: 17px 13px #5F00A2;
+}
+
+.service__grid-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/service/3block.svg") no-repeat;
+  width: 400px;
+  height: 400px;
+  transition: all 0.8s;
+}
+.service__grid-back:hover {
+  background: url("../images/service/3block-no.svg") no-repeat;
+  width: 400px;
+  height: 400px;
+}
+
+.service__grid-backgr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/service/4block.svg") no-repeat;
+  width: 400px;
+  height: 400px;
+  transition: all 0.8s;
+}
+.service__grid-backgr:hover {
+  background: url("../images/service/4block-no.svg") no-repeat;
+  width: 400px;
+  height: 400px;
+}
+
+.service__item-head {
+  margin-bottom: 24px;
+}
+
+.service__item-text {
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #000;
+}
+.service__item-text:last-child {
+  margin-bottom: 0;
+}
