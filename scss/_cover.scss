@@ -1,0 +1,88 @@
+// COVER
+.main__cover {
+    padding: 0 0 110px 0;
+}
+.cover__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cover__heading {
+    margin-right: 64px;
+    &-title {
+        text-align: left;
+        margin-bottom: 36px;
+        max-width: 550px;
+    }
+    &-text {
+        text-align: left;
+        max-width: 400px;
+        margin: 0 0 42px 0;
+    }
+}
+.cover__row {
+    &-list {
+    }
+    &-item {
+        padding: 52px 52px 52px 52px;
+        background: #EDEDED;
+        border: 1px solid #27282D;
+        border-radius: 19px;
+        max-width: 600px;
+        transform: translate(0px, 55%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+        &.active {
+            transform: translate(0px, 70%);
+            opacity: 1;
+            transition: all .8s ease 0s;
+        }
+    }
+    &-items {
+        padding: 52px 52px 52px 52px;
+        background: #EDEDED;
+        border: 1px solid #27282D;
+        border-radius: 19px;
+        max-width: 600px;
+        transform: translate(0px, 95%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+        &.active {
+            transform: translate(0px, -10%) rotate(1deg);
+            opacity: 1;
+            transition: all 3s ease 0s;
+        }
+    }
+    &-itemt {
+        padding: 52px 52px 52px 52px;
+        background: #EDEDED;
+        border: 1px solid #27282D;
+        border-radius: 19px;
+        max-width: 600px;
+        transform: translate(0px, 100%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+        &.active {
+            transform: translate(0px, -100%) rotate(-1deg);
+            opacity: 1;
+            transition: all 3s ease 0s;
+        }
+    }
+}
+.second-item {
+    transform: translate(0px, 55%);
+    opacity: 0;
+    transition: all .8s ease 0s;
+    &.active {
+        transform: translate(0px, );
+        opacity: 0;
+        transition: all .8s ease 0s;
+    }
+}
+.cover__item {
+    &-text {
+        max-width: 455px;
+        margin: 24px 0 0 0;
+        text-align: left;
+    }
+}

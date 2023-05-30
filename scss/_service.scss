@@ -1,6 +1,6 @@
 // SERVICE
 .main__service {
-    padding: 0 0 0 0;
+    padding: 0 0 110px 0;
 }
 .service__inner {
 }
@@ -37,39 +37,59 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../images/service/3block.svg") no-repeat;
+    background: url("../images/service/3block-no.svg") no-repeat;
     width: 400px;
     height: 400px;
-    transition: all .8s;
-    &:hover {
-        background: url("../images/service/3block-no.svg") no-repeat;
-        width: 400px;
-        height: 400px;
+    transform: translate(0px, 55%);
+    opacity: 0;
+    transition: all .8s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all .8s ease .0s;
     }
 }
 .service__grid-backgr {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../images/service/4block.svg") no-repeat;
+    background: url("../images/service/4block-no.svg") no-repeat;
     width: 400px;
     height: 400px;
-    transition: all .8s;
-    &:hover {
-        background: url("../images/service/4block-no.svg") no-repeat;
-        width: 400px;
-        height: 400px;
+    transform: translate(0px, 55%);
+    opacity: 0;
+    transition: all .8s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all .8s ease .0s;
     }
 }
 .service__item-head {
     margin-bottom: 24px;
+    transform: translate(120%, 0px);
+    opacity: 0;
+    transition: all .8s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all .8s ease 0s;
+    }
 }
 .service__item-text {
     text-align: left;
     margin-bottom: 8px;
     font-weight: 500;
     color: #000;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all .8s ease 0;
     &:last-child {
         margin-bottom: 0;
+    }
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all .8s ease .2s;
     }
 }
