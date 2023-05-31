@@ -2,4 +2,205 @@
 @import "_header";
 @import "_team";
 @import "_cover";
+
+// OFFER------------------------
+.main__offer {
+    padding: 0 0 110px 0;
+}
+.offer__inner {
+}
+.offer__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+        text-align: left;
+        max-width: 400px;
+    }
+    &-text {
+        text-align: left;
+        max-width: 470px
+    }
+}
+// -----------------------------
+// BUILD
+.main__build {
+    padding: 0 0 110px 0;
+}
+.build__heading {
+    text-align: center;
+    margin-bottom: 42px;
+    &-title {
+        max-width: 1100px
+    }
+}
+.build__scroll {
+    display: flex;
+    align-items: center;
+    width: 4421px;
+    &-item {
+        width: 220px;
+        border: 1px solid #27282D;
+        text-align: center;
+        border-radius: 25px;
+        margin-right: 20px;
+        padding: 10px;
+        transform: translate3d(0, 0, 0);
+        animation: scrl 6s linear infinite;
+        transition: all .4s;
+        cursor: default;
+        &:hover {
+            color: #fff;
+            background-color: #5F00A2;
+            border: 1px solid #5F00A2;
+        }
+    }
+}
+@keyframes scrl {
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+.build__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+    &-list {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(8, 70px);
+        align-items: center;
+        justify-items: center;  
+        gap: 90px;
+    }
+    &-item {
+        opacity: 1;
+        transition: all .3s;
+        &:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+}
+//----------------------------------------------------------------------
 @import "_service";
+@import "_testimonials";
+@import "_case";
+// OUTCOMES
+.main__outcomes {
+    padding: 0 0 110px 0;
+}
+.outcomes__inner {
+}
+.outcomes__heading {
+    margin-bottom: 42px;
+}
+.qoutcomes__scrolls {
+    margin-top: 10px;
+    margin-left: -50px;
+    display: flex;
+    align-items: center;
+    width: 3421px;
+    z-index: 5;
+    font-size: 35px;
+    cursor: default;
+    color: #EDEDED;
+    animation: scr 250s linear infinite;
+    &-item {
+        width: 800px;
+        text-align: center;
+        border-radius: 25px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 25px 10px;
+        white-space: nowrap;
+        transform: translate3d(0, 0, 0);
+        & p {
+            font-family: 'Roboto Mono';
+            font-weight: 700;
+            font-size: 30px;
+        }
+        &:hover {
+            color:#5F00A2;
+        }
+    }
+}
+.qoutcomes__scroll {
+    margin-top: 10px;
+    margin-left: -950px;
+    display: flex;
+    align-items: center;
+    width: 3421px;
+    font-size: 40px;
+    cursor: default;
+    animation: scrr 250s linear infinite;
+    &-item {
+        width: 800px;
+        text-align: center;
+        border-radius: 25px;
+        margin-right: 20px;
+        padding: 25px 10px;
+        white-space: nowrap;
+        transform: translate3d(0, 0, 0);
+        & p {
+            font-family: 'Roboto Mono';
+            font-weight: 700;
+            font-size: 30px;
+        }
+        &:hover {
+            color:#5F00A2;
+        }
+    }
+}
+@keyframes scr {
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+@keyframes scrr {
+    100% {
+        transform: translate3D(100%, 0, 0);
+    }
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
+}
+// ---------------------------------------------------------------------
+// BUSINESS
+.main__business {
+    padding: 0 0 110px 0;
+    display: flex;
+    justify-content: center;
+}
+.business__box {
+    padding: 75px 37px 60px 37px;
+    background-color: #EDEDED;
+    box-shadow: 17px 13px #5F00A2;
+    max-width: 1000px;
+    border-radius: 19px;
+    transition: all .8s ease;
+    position: relative;
+    &:hover {
+        background-color: #5F00A2;
+        box-shadow: 17px 13px #E6FF28;
+        color: #fff;
+        cursor: default;
+    }
+}
+.business__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+        margin-bottom: 36px;
+    }
+    &-text {
+        margin-bottom: 42px;
+    }
+}
+.business__btn {
+    &-button {
+        margin-right: 31px;
+    }
+}
+// --------------------------------------------------------------------------

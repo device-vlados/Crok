@@ -34,4 +34,45 @@ $(function () {
         e.preventDefault()
         $('.header__nav').toggleClass('header__nav--open')
     })
+    // SLIDER1
+    $('.testimonials__slider').slick({
+        slidesToShow: 1,
+        arrows: false,
+        dots: false,
+        waitForAnimate: true,
+        infinite: true,
+    })
+    $('.testimonials__slider-prev').on('click', function (e) {
+        e.preventDefault()
+        $('.testimonials__slider').slick('slickPrev')
+    })
+    $('.testimonials__slider-next').on('click', function (e) {
+        e.preventDefault()
+        $('.testimonials__slider').slick('slickNext')
+    })
+    // SLIDER2
+    $('.case__slider').slick({
+        slidesToShow: 2,
+        arrows: false,
+        dots: false,
+        waitForAnimate: true,
+        infinite: true,
+        responsive: 
+        [
+            {
+            breakpoint: 1250,
+            settings: {
+                slidesToShow: 1,
+            },
+            },
+        ]
+    })
+    $('.case__slider-prev').on('click', function (e) {
+        e.preventDefault()
+        $('.case__slider').slick('slickPrev')
+    })
+    $('.case__slider-next').on('click', function (e) {
+        e.preventDefault()
+        $('.case__slider').slick('slickNext')
+    })
 })

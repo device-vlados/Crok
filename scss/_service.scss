@@ -11,7 +11,7 @@
         max-width: 639px;
     }
     &-text {
-        max-width: 677px;
+        max-width: 800px;
     }
 }
 .service__grid {
@@ -25,11 +25,23 @@
     &-item {
         padding: 52px 10px 88px 37px;
         background-color: #EDEDED;
+        box-shadow: 17px 13px #5F00A2;
         border-radius: 19px;
-        transition: all .3s;
+        transition: all .8s ease;
         position: relative;
         &:hover {
-            box-shadow: 17px 13px #5F00A2;
+            background-color: #5F00A2;
+            box-shadow: 17px 13px #E6FF28;
+            color: #fff;
+            cursor: default;
+        }
+        &:hover p {
+            color: #fff;
+            cursor: default;
+        }
+        &:hover h2 {
+            color: #fff;
+            cursor: default;
         }
     }
 }
@@ -37,16 +49,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../images/service/3block-no.svg") no-repeat;
+    background: url("../images/service/3block.svg") no-repeat;
     width: 400px;
     height: 400px;
     transform: translate(0px, 55%);
     opacity: 0;
+    z-index: 1;
     transition: all .8s ease 0;
     &.active {
         transform: translate(0px, 0px);
         opacity: 1;
         transition: all .8s ease .0s;
+    }
+    &:hover {
+        z-index: 5;
+        background: url("../images/service/3block-no.svg") no-repeat;
+        width: 400px;
+        height: 400px;
+        transform: scale(0.95);
     }
 }
 .service__grid-backgr {
@@ -90,6 +110,6 @@
     &.active {
         transform: translate(0px, 0px);
         opacity: 1;
-        transition: all .8s ease .2s;
+        transition: all .8s ease .0s;
     }
 }
