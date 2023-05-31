@@ -577,14 +577,13 @@ p {
   background: url("../images/service/3block-no.svg") no-repeat;
   width: 400px;
   height: 400px;
-  transform: scale(0.95);
 }
 
 .service__grid-backgr {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/service/4block-no.svg") no-repeat;
+  background: url("../images/service/4block.svg") no-repeat;
   width: 400px;
   height: 400px;
   transform: translate(0px, 55%);
@@ -595,6 +594,12 @@ p {
   transform: translate(0px, 0px);
   opacity: 1;
   transition: all 0.8s ease 0s;
+}
+.service__grid-backgr:hover {
+  z-index: 5;
+  background: url("../images/service/4block-no.svg") no-repeat;
+  width: 400px;
+  height: 400px;
 }
 
 .service__item-head {
