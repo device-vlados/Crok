@@ -84,3 +84,26 @@
 .case__slide {
     margin-right: 50px;
 }
+// MEDIA
+// 1250
+@media (max-width: 1250px) {
+    .case__slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+// 550
+@media (max-width: 550px) {
+    .case__slider-arrow {
+        top: 4px;
+        right: 30px;
+    }
+    .case__slider .slick-list {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .case__slider .slick-track{
+        width: 100%;
+        height: 300px;
+    }
+}

@@ -1,11 +1,12 @@
 // COVER
 .main__cover {
-    padding: 0 0 50px 0;
+    padding: 0 0 110px 0;
 }
 .cover__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 }
 .cover__heading {
     margin-right: 64px;
@@ -33,7 +34,7 @@
         opacity: 0;
         transition: all .8s ease 0s;
         &.active {
-            transform: translate(0px, 70%);
+            transform: translate(0px, 70%) rotate(14.76deg);
             opacity: 1;
             transition: all .8s ease 0s;
         }
@@ -44,11 +45,11 @@
         border: 1px solid #27282D;
         border-radius: 19px;
         max-width: 600px;
-        transform: translate(0px, 95%);
+        transform: translate(0px, 100%);
         opacity: 0;
         transition: all .8s ease 0s;
         &.active {
-            transform: translate(0px, -10%) rotate(1deg);
+            transform: translate(0px, 15%) rotate(-2.16deg);
             opacity: 1;
             transition: all 3s ease 0s;
         }
@@ -63,7 +64,7 @@
         opacity: 0;
         transition: all .8s ease 0s;
         &.active {
-            transform: translate(0px, -100%) rotate(-1deg);
+            transform: translate(0px, -20%) rotate(-12.79deg);
             opacity: 1;
             transition: all 3s ease 0s;
         }
@@ -84,5 +85,50 @@
         max-width: 455px;
         margin: 24px 0 0 0;
         text-align: left;
+    }
+}
+// MEDIA
+// 750px
+@media (max-width: 750px) {
+    .main__cover {
+        padding: 0 0 100px 0;
+    }
+    .cover__inner {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cover__heading {
+        margin: 64px 0 0 0;
+        &-title {
+            text-align: center;
+        }
+        &-text {
+            text-align: center;
+            margin: 0 auto;
+        }
+        &-btn {
+            margin-top: 42px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+// 550px
+@media (max-width: 550px) {
+    .cover__heading {
+        margin: 64px 0 0 0;
+        &-title {
+            text-align: center;
+        }
+        &-text {
+            text-align: center;
+            margin: 0 auto;
+        }
+        &-btn {
+            margin-top: 42px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }

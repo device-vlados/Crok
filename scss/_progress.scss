@@ -1,0 +1,202 @@
+// PROGRESS
+.main__progress {
+    padding: 50px 0 110px 0;
+}
+.progress__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.progress {
+    content:'';
+    position:absolute;
+    height: 2px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    top: 32%;
+    left:calc(12% - 1px) ;
+    width: 75%;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    transform: translate(0, 0px);
+    opacity: 0;
+    transition: all 7.5s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 7.5s ease .0s;
+    }
+}
+.circle__active-first {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1s ease 0;
+    margin-right: 5px;
+    position: relative;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1s ease .0s;
+    }
+}
+.circle {
+    margin: 0 auto;
+    width: 19px;
+    height: 19px;
+    background: #5F00A2;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transform: translate(-590px, 0px);
+    opacity: 0;
+    transition: all .8s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all .8s ease .0s;
+    }
+}
+.circle-sec {
+    margin: 0 auto;
+    width: 19px;
+    height: 19px;
+    background: #FF5100;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transform: translate(-590px, 0px);
+    opacity: 0;
+    transition: all 1.2s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.2s ease .0s;
+    }
+}
+.circle-thr {
+    margin: 0 auto;
+    width: 19px;
+    height: 19px;
+    background: #E6FF28;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transform: translate(-590px, 0px);
+    opacity: 0;
+    transition: all 1.6s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.6s ease .0s;
+    }
+}
+.circle-four {
+    margin: 0 auto;
+    width: 19px;
+    height: 19px;
+    background: #5F00A2;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    transform: translate(-590px, 0px);
+    opacity: 0;
+    transition: all 1.9s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.9s ease .0s;
+    }
+}
+.circle__active-title {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+.circle__active-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin: 22px 0 0 0;
+    max-width: 299px;
+}
+
+.circle__active-second {
+    position: relative;
+    margin-right: 5px;
+    transform: translate(0px, 140%);
+    opacity: 0;
+    transition: all 1.3s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.3s ease .0s;
+    }
+}
+.circle__active-three {
+    position: relative;
+    margin-right: 5px;
+    transform: translate(0px, 150%);
+    opacity: 0;
+    transition: all 1.6s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.6s ease .0s;
+    }
+}
+
+.circle__active-four {
+    position: relative;
+    margin-right: 5px;
+    transform: translate(0px, 160%);
+    opacity: 0;
+    transition: all 1.9s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all 1.9s ease .0s;
+    }
+}
+// MEDIA
+@media (max-width: 1220px){
+    .progress {
+        content:'';
+        position:absolute;
+        height: 2px;
+        border: 2px solid #000000;
+        border-radius: 2px;
+        top: 28%;
+        left:calc(12% - 1px) ;
+        width: 75%;
+        border: 2px solid #000000;
+        border-radius: 2px;
+        transform: translate(0, 0px);
+        opacity: 0;
+        transition: all 7.5s ease 0;
+        &.active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all 7.5s ease .0s;
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .main__progress {
+        padding: 0px 0 110px 0;
+    }
+    .progress__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+    .progress {
+        display: none;
+    }
+    .circle__active {
+        &-title {
+            margin: 51px 0 15px 0;
+        }
+        &-text {
+            margin: 13px auto;
+        }
+    }
+}

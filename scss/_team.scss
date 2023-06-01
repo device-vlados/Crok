@@ -5,13 +5,13 @@
 .team {
     &__slider {
         display: flex;
-        width: 3240px;
+        width: 5240px;
     }
     &__slaid {
         width: 250px;
         margin-right: 20px;
         transform: translate3d(0, 0, 0);
-        animation: teams 10s linear infinite;
+        animation: teams 20s linear infinite;
     }
     &__image-box {
         position: relative;
@@ -34,7 +34,7 @@
 }
 @keyframes teams {
     100% {
-        transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
     }
 }
 .team__image-box img{
@@ -46,11 +46,29 @@
 .team__image-box:hover img {
     filter: grayscale(0);
 }
-.team__image {
+// MEDIA
+// 750px
+@media (max-width: 750px) {
+    .main__team {
+        padding: 0 0 64px 0;
+    }
 }
-.team__image-info {
-}
-.team__info-name {
-}
-.team__info-dir {
+// 550px
+@media (max-width: 550px) {
+    .team {
+        &__slaid {
+            width: 180px;
+            animation: teams 30s linear infinite;
+        }
+        &__image-box {
+            width: 180px;
+            & img {
+                width: 180px;
+            }
+        }
+        &__image-info {
+            left: 15px;
+            width: 150px;
+        }
+    }
 }

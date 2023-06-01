@@ -68,6 +68,52 @@
         height: 400px;
     }
 }
+.service__grid-backgraund {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/service/1block.svg") no-repeat;
+    width: 400px;
+    height: 400px;
+    transform: translate(0px, 55%);
+    opacity: 0;
+    z-index: 1;
+    transition: all .8s ease 0;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all .8s ease .0s;
+    }
+    &:hover {
+        z-index: 5;
+        background: url("../images/service/1block-no.svg") no-repeat;
+        width: 400px;
+        height: 400px;
+    }
+}
+.service__grid-backgraunds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/service/2block.svg") no-repeat;
+    width: 400px;
+    height: 400px;
+    transform: translate(0px, 55%);
+    opacity: 0;
+    transition: all .8s ease 0;
+    z-index: 1;
+    &.active {
+        transform: translate(0px, 0px);
+        opacity: 1;
+        transition: all .8s ease .0s;
+    }
+    &:hover {
+        z-index: 5;
+        background: url("../images/service/2block-no.svg") no-repeat;
+        width: 400px;
+        height: 400px;
+    }
+}
 .service__grid-backgr {
     position: absolute;
     top: 0;
@@ -116,5 +162,111 @@
         transform: translate(0px, 0px);
         opacity: 1;
         transition: all .8s ease .0s;
+    }
+}
+// MEDIA
+// 950
+@media (max-width: 950px) {
+    .service__grid {
+        &-list {
+            display: grid;
+            grid-template: repeat(4, 400px) / repeat(1, 400px);
+            gap: 47px;
+        }
+    }
+}
+// 500
+@media (max-width: 550px) {
+    .service__grid {
+        display: flex;
+        justify-content: center;
+        &-list {
+            display: grid;
+            grid-template: repeat(4, 300px) / repeat(1, 300px);
+            gap: 47px;
+        }
+        &-item {
+            padding: 22px 10px 88px 30px;
+            background-color: #EDEDED;
+            box-shadow: 17px 13px #5F00A2;
+            border-radius: 19px;
+            transition: all .8s ease;
+            position: relative;
+            &:hover {
+                background-color: #5F00A2;
+                box-shadow: 17px 13px #E6FF28;
+                color: #fff;
+                cursor: default;
+            }
+            &:hover p {
+                color: #fff;
+                cursor: default;
+            }
+            &:hover h2 {
+                color: #fff;
+                cursor: default;
+            }
+        }
+    }
+    .service__grid-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url("../images/service/3mob.svg") no-repeat;
+        width: 400px;
+        height: 400px;
+        transform: translate(0px, 55%);
+        opacity: 0;
+        z-index: 1;
+        transition: all .8s ease 0;
+        &.active {
+            transform: translate(0px, 0px);
+            opacity: 1;
+            transition: all .8s ease .0s;
+        }
+        &:hover {
+            z-index: 5;
+            background: url("../images/service/3mob.svg") no-repeat;
+            width: 400px;
+            height: 400px;
+        }
+    }
+    .service__grid-backgraund {
+        background: url("../images/service/2mob.svg") no-repeat;
+        width: 300px;
+        height: 300px;
+        &:hover {
+            background: url("../images/service/2mob.svg") no-repeat;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .service__grid-backgraunds {
+        background: url("../images/service/4mob.svg") no-repeat;
+        width: 300px;
+        height: 300px;
+        &:hover {
+            background: url("../images/service/4mob.svg") no-repeat;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .service__grid-backgr {
+        background: url("../images/service/1mob.svg") no-repeat;
+        width: 300px;
+        height: 300px;
+        &:hover {
+            background: url("../images/service/1mob.svg") no-repeat;
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .service__item-head {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .service__item-text {
+        font-size: 12px;
+        margin-bottom: 3px;
     }
 }

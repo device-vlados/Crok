@@ -1,6 +1,7 @@
 @import "_global";
 @import "_header";
 @import "_team";
+@import "_progress";
 @import "_cover";
 
 // OFFER------------------------
@@ -22,6 +23,24 @@
         max-width: 470px
     }
 }
+// MEDIA
+// 1000
+@media (max-width: 1000px) {
+    .offer__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title {
+            text-align: center;
+            max-width: 400px;
+            margin-bottom: 36px;
+        }
+        &-text {
+            text-align: center;
+            max-width: 470px
+        }
+    }
+}
 // -----------------------------
 // BUILD
 .main__build {
@@ -38,6 +57,7 @@
     display: flex;
     align-items: center;
     width: 4421px;
+    padding-right: 500px;
     &-item {
         width: 220px;
         border: 1px solid #27282D;
@@ -46,7 +66,7 @@
         margin-right: 20px;
         padding: 10px;
         transform: translate3d(0, 0, 0);
-        animation: scrl 6s linear infinite;
+        animation: scrl 15s linear infinite;
         transition: all .4s;
         cursor: default;
         &:hover {
@@ -57,8 +77,11 @@
     }
 }
 @keyframes scrl {
+    0% {
+        transform: translate3d(0%, 0, 0);
+    }
     100% {
-        transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-400%, 0, 0);
     }
 }
 .build__grid {
@@ -82,10 +105,46 @@
         }
     }
 }
+// MEDIA
+// 1250px
+@media (max-width: 1250px) {
+    .build__grid {
+        &-list {
+            grid-template: repeat(4, auto) / repeat(6, 70px);
+            gap: 90px;
+        }
+}
+}
+// 950px
+@media (max-width: 950px) {
+    .build__grid {
+        &-list {
+            grid-template: repeat(6, auto) / repeat(4, 70px);
+            gap: 30px;
+        }
+}
+}
+// 500px
+@media (max-width: 500px) {
+    .build__scroll {
+        width: 3421px;
+    }
+    .build__scroll-item {
+        width: 150px;
+        padding: 7px;
+    }
+    .build__grid {
+        &-list {
+            grid-template: repeat(6, auto) / repeat(4, 70px);
+            gap: 10px;
+        }
+}
+}
 //----------------------------------------------------------------------
 @import "_service";
 @import "_testimonials";
 @import "_case";
+
 // OUTCOMES
 .main__outcomes {
     padding: 0 0 110px 0;
@@ -100,7 +159,7 @@
     margin-left: -50px;
     display: flex;
     align-items: center;
-    width: 3421px;
+    width: 1421px;
     z-index: 5;
     font-size: 35px;
     cursor: default;
@@ -109,12 +168,12 @@
     &-item {
         width: 800px;
         text-align: center;
-        border-radius: 25px;
         margin-right: 20px;
         margin-left: 20px;
         padding: 25px 10px;
         white-space: nowrap;
         transform: translate3d(0, 0, 0);
+        transition: all .3s;
         & p {
             font-family: 'Roboto Mono';
             font-weight: 700;
@@ -137,11 +196,11 @@
     &-item {
         width: 800px;
         text-align: center;
-        border-radius: 25px;
         margin-right: 20px;
         padding: 25px 10px;
         white-space: nowrap;
         transform: translate3d(0, 0, 0);
+        transition: all .3s;
         & p {
             font-family: 'Roboto Mono';
             font-weight: 700;
@@ -154,15 +213,38 @@
 }
 @keyframes scr {
     100% {
-        transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+    0% {
+        transform: translate3d(0%, 0, 0);
     }
 }
 @keyframes scrr {
     100% {
-        transform: translate3D(100%, 0, 0);
+        transform: translate3D(3000px, 0, 0);
     }
     0% {
         transform: translate3d(0%, 0, 0);
+    }
+}
+// MEDIA
+// 550
+@media (max-width: 550px) {
+    .qoutcomes__scrolls {
+        &-item {
+            padding: 15px 10px;
+            & p {
+                font-size: 24px;
+            }
+        }
+    }
+    .qoutcomes__scroll {
+        &-item {
+            padding: 15px 10px;
+            & p {
+                font-size: 24px;
+            }
+        }
     }
 }
 // ---------------------------------------------------------------------
@@ -171,6 +253,9 @@
     padding: 0 0 110px 0;
     display: flex;
     justify-content: center;
+}
+.business__inner {
+    margin: 0 30px 0 30px;
 }
 .business__box {
     padding: 75px 37px 60px 37px;
@@ -203,4 +288,19 @@
         margin-right: 31px;
     }
 }
+// MEDIA
+// 550
+@media (max-width: 550px) {
+    .business__box {
+        padding: 55px 10px 40px 10px;
+    }
+    .business__btn {
+        display: flex;
+        flex-direction: column
+    }
+    .business__btn-button {
+        margin: 0 0 26px 0;
+    }
+}
 // --------------------------------------------------------------------------
+@import "_footer";
