@@ -222,7 +222,7 @@ p {
     transition: all 0.5s;
   }
   .header__nav--open {
-    transform: translateY(80%);
+    transform: translateY(70%);
   }
   .header__nav-list {
     display: flex;
