@@ -891,10 +891,9 @@ p {
 }
 .service__heading-title {
   margin-bottom: 36px;
-  max-width: 639px;
 }
 .service__heading-text {
-  max-width: 800px;
+  max-width: 950px;
 }
 
 .service__grid {
