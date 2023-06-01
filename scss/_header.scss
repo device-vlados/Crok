@@ -146,7 +146,7 @@
         transform: translateY(-120%);
         transition: all .5s;
         &--open {
-            transform: translateY(70%);
+            transform: translateY(65%);
         }
         &-list {
             display: flex;
@@ -179,6 +179,9 @@
     }
     .header__body {
         padding: 180px 0 110px 0;
+    }
+    .header__nav--open {
+        transform: translateY(60%);
     }
 }
 // 550

@@ -35,7 +35,7 @@ body, html {
 }
 
 .btn {
-  padding: 11px 50px 10px 50px;
+  padding: 11px 10px 10px 10px;
   background: #fff;
   border: 1px solid #27282D;
   border-radius: 7px;
@@ -227,7 +227,7 @@ p {
     transition: all 0.5s;
   }
   .header__nav--open {
-    transform: translateY(70%);
+    transform: translateY(65%);
   }
   .header__nav-list {
     display: flex;
@@ -258,6 +258,9 @@ p {
   }
   .header__body {
     padding: 180px 0 110px 0;
+  }
+  .header__nav--open {
+    transform: translateY(60%);
   }
 }
 @media (max-width: 550px) {
@@ -333,7 +336,7 @@ p {
   width: 250px;
   margin-right: 20px;
   transform: translate3d(0, 0, 0);
-  animation: teams 20s linear infinite;
+  animation: teams 45s linear infinite;
 }
 .team__image-box {
   position: relative;
@@ -438,7 +441,7 @@ p {
   }
 }
 .circle__active-first {
-  transform: translate(0px, 0%);
+  transform: translate(0px, 10%);
   opacity: 0;
   transition: all 1s ease 0;
   margin-right: 5px;
@@ -537,40 +540,40 @@ p {
 .circle__active-second {
   position: relative;
   margin-right: 5px;
-  transform: translate(0px, 100%);
+  transform: translate(0px, 10%);
   opacity: 0;
   transition: all 1.3s ease 0;
 }
 .circle__active-second.active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 1.3s ease 0s;
+  transition: all 1.3s ease 0.3s;
 }
 
 .circle__active-three {
   position: relative;
   margin-right: 5px;
-  transform: translate(0px, 110%);
+  transform: translate(0px, 10%);
   opacity: 0;
   transition: all 1.6s ease 0;
 }
 .circle__active-three.active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 1.6s ease 0s;
+  transition: all 1.6s ease 0.6s;
 }
 
 .circle__active-four {
   position: relative;
   margin-right: 5px;
-  transform: translate(0px, 120%);
+  transform: translate(0px, 10%);
   opacity: 0;
   transition: all 1.9s ease 0;
 }
 .circle__active-four.active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 1.9s ease 0s;
+  transition: all 1.9s ease 0.9s;
 }
 
 @media (max-width: 1220px) {
@@ -1112,36 +1115,43 @@ p {
     background: url("../images/service/3mob.svg") no-repeat;
     width: 400px;
     height: 400px;
+    transition: all 0.5s;
   }
   .service__grid-backgraund {
     background: url("../images/service/2mob.svg") no-repeat;
     width: 300px;
     height: 300px;
+    transition: all 0.5s;
   }
   .service__grid-backgraund:hover {
     background: url("../images/service/2mob.svg") no-repeat;
     width: 300px;
     height: 300px;
+    transition: all 0.5s;
   }
   .service__grid-backgraunds {
     background: url("../images/service/4mob.svg") no-repeat;
     width: 300px;
     height: 300px;
+    transition: all 0.5s;
   }
   .service__grid-backgraunds:hover {
     background: url("../images/service/4mob.svg") no-repeat;
     width: 300px;
     height: 300px;
+    transition: all 0.5s;
   }
   .service__grid-backgr {
     background: url("../images/service/1mob.svg") no-repeat;
     width: 300px;
     height: 300px;
+    transition: all 0.5s;
   }
   .service__grid-backgr:hover {
     background: url("../images/service/1mob.svg") no-repeat;
     width: 300px;
     height: 300px;
+    transition: all 0.5s;
   }
   .service__item-head {
     font-size: 18px;
@@ -1485,8 +1495,6 @@ p {
   text-align: left;
 }
 .crokio__grid-img {
-  display: flex;
-  justify-content: center;
   margin-bottom: 8px;
 }
 
@@ -1510,6 +1518,10 @@ p {
   .crokio__grid-item p {
     text-align: center;
     white-space: normal;
+  }
+  .crokio__grid-img {
+    display: flex;
+    justify-content: center;
   }
 }
 .main__outcomes {
