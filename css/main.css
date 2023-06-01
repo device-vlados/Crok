@@ -270,6 +270,30 @@ p {
   .header__top {
     top: 25px;
   }
+  .header__nav {
+    position: fixed;
+    top: 0px;
+    right: 15px;
+    left: 15px;
+    bottom: 0;
+    margin: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 3px 3px 8px 3px rgba(95, 0, 162, 0.17);
+    border-radius: 5px;
+    margin: 115px;
+    z-index: 100;
+    margin: 0 auto;
+    transform: translateY(-120%);
+    transition: all 0.5s;
+  }
+  .header__nav--open {
+    transform: translateY(55%);
+  }
   .header__body {
     padding: 150px 0 110px 0;
   }
