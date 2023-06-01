@@ -22,13 +22,13 @@
 }
 .header__top-logo {
     background: url("../images/logo.svg") no-repeat;
-    width: 266px;
-    height: 59px;
+    width: 183px;
+    height: 40px;
     transition: all .2s;
     &:hover {
         background: url("../images/logo-hover.svg") no-repeat;
-        width: 266px;
-        height: 59px;
+        width: 183px;
+        height: 40px;
     }
 }
 .header__nav {
@@ -51,7 +51,7 @@
 }
 // HEADER-BODY
 .header__body {
-    padding: 230px 0 110px 0;
+    padding: 200px 0 110px 0;
 }
 .header__body-inner {
     display: flex;
@@ -61,6 +61,9 @@
 .header__heading {
     &-title {
         margin-bottom: 42px;
+        font-size: 70px;
+        line-height: 77px;
+        max-width: 1270px;
     }
     &-text {
         margin-bottom: 42px;

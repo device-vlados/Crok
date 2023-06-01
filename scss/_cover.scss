@@ -37,9 +37,9 @@
             transform: translate(0px, 70%) rotate(14.76deg);
             opacity: 1;
             transition: all .8s ease 0s;
-        }
-        &:hover {
-            z
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
     &-items {
@@ -54,7 +54,10 @@
         &.active {
             transform: translate(0px, 15%) rotate(-2.16deg);
             opacity: 1;
-            transition: all 3s ease 0s;
+            transition: all .8s ease 0s;
+            &:hover {
+                transform: scale(1.1) translate(0px, -30%);
+            }
         }
     }
     &-itemt {
@@ -69,7 +72,10 @@
         &.active {
             transform: translate(0px, -20%) rotate(-12.79deg);
             opacity: 1;
-            transition: all 3s ease 0s;
+            transition: all .8s ease 0s;
+            &:hover {
+                transform: scale(1.1) translate(0px, -30%);
+            }
         }
     }
 }

@@ -15,20 +15,35 @@
     border-radius: 2px;
     top: 32%;
     left:calc(12% - 1px) ;
-    width: 75%;
+    width:calc(75% - 1px);
     border: 2px solid #000000;
     border-radius: 2px;
-    transform: translate(0, 0px);
     opacity: 0;
     transition: all 7.5s ease 0;
     &.active {
-        transform: translate(0px, 0px);
         opacity: 1;
-        transition: all 7.5s ease .0s;
+        animation: progres 2.1s linear;
+    }
+}
+@keyframes progres {
+    0% {
+        width: 0px;
+    }
+    25% {
+        width: 19%;
+    }
+    50% {
+        width: 38%;
+    }
+    75% {
+        width: 56%;
+    }
+    100% {
+        width: 75%;
     }
 }
 .circle__active-first {
-    transform: translate(0px, 120%);
+    transform: translate(0px, 0%);
     opacity: 0;
     transition: all 1s ease 0;
     margin-right: 5px;
@@ -96,11 +111,11 @@
     border-radius: 50%;
     transform: translate(-590px, 0px);
     opacity: 0;
-    transition: all 1.9s ease 0;
+    transition: all 1.8s ease 0;
     &.active {
         transform: translate(0px, 0px);
         opacity: 1;
-        transition: all 1.9s ease .0s;
+        transition: all 1.8s ease .0s;
     }
 }
 .circle__active-title {
@@ -121,7 +136,7 @@
 .circle__active-second {
     position: relative;
     margin-right: 5px;
-    transform: translate(0px, 140%);
+    transform: translate(0px, 100%);
     opacity: 0;
     transition: all 1.3s ease 0;
     &.active {
@@ -133,7 +148,7 @@
 .circle__active-three {
     position: relative;
     margin-right: 5px;
-    transform: translate(0px, 150%);
+    transform: translate(0px, 110%);
     opacity: 0;
     transition: all 1.6s ease 0;
     &.active {
@@ -146,7 +161,7 @@
 .circle__active-four {
     position: relative;
     margin-right: 5px;
-    transform: translate(0px, 160%);
+    transform: translate(0px, 120%);
     opacity: 0;
     transition: all 1.9s ease 0;
     &.active {

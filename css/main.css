@@ -20,13 +20,14 @@ body, html {
 }
 
 .button {
-  padding: 11px 10px 10px 10px;
+  padding: 11px 20px 10px 20px;
   background: #27282D;
   border-radius: 7px;
   color: #fff;
   font-weight: 400;
   text-align: center;
   transition: all 0.3s;
+  width: 204px;
 }
 .button:hover {
   box-shadow: 6px 5px #E6FF28;
@@ -34,13 +35,14 @@ body, html {
 }
 
 .btn {
-  padding: 11px 10px 10px 10px;
+  padding: 11px 50px 10px 50px;
   background: #fff;
   border: 1px solid #27282D;
   border-radius: 7px;
   font-weight: 400;
   text-align: center;
   transition: all 0.3s;
+  width: 204px;
 }
 .btn:hover {
   box-shadow: 6px 5px #E6FF28;
@@ -105,14 +107,14 @@ p {
 
 .header__top-logo {
   background: url("../images/logo.svg") no-repeat;
-  width: 266px;
-  height: 59px;
+  width: 183px;
+  height: 40px;
   transition: all 0.2s;
 }
 .header__top-logo:hover {
   background: url("../images/logo-hover.svg") no-repeat;
-  width: 266px;
-  height: 59px;
+  width: 183px;
+  height: 40px;
 }
 
 .header__nav {
@@ -135,7 +137,7 @@ p {
 }
 
 .header__body {
-  padding: 230px 0 110px 0;
+  padding: 200px 0 110px 0;
 }
 
 .header__body-inner {
@@ -146,6 +148,9 @@ p {
 
 .header__heading-title {
   margin-bottom: 42px;
+  font-size: 70px;
+  line-height: 77px;
+  max-width: 1270px;
 }
 .header__heading-text {
   margin-bottom: 42px;
@@ -404,21 +409,36 @@ p {
   border-radius: 2px;
   top: 32%;
   left: calc(12% - 1px);
-  width: 75%;
+  width: calc(75% - 1px);
   border: 2px solid #000000;
   border-radius: 2px;
-  transform: translate(0, 0px);
   opacity: 0;
   transition: all 7.5s ease 0;
 }
 .progress.active {
-  transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 7.5s ease 0s;
+  animation: progres 2.1s linear;
 }
 
+@keyframes progres {
+  0% {
+    width: 0px;
+  }
+  25% {
+    width: 19%;
+  }
+  50% {
+    width: 38%;
+  }
+  75% {
+    width: 56%;
+  }
+  100% {
+    width: 75%;
+  }
+}
 .circle__active-first {
-  transform: translate(0px, 120%);
+  transform: translate(0px, 0%);
   opacity: 0;
   transition: all 1s ease 0;
   margin-right: 5px;
@@ -490,12 +510,12 @@ p {
   border-radius: 50%;
   transform: translate(-590px, 0px);
   opacity: 0;
-  transition: all 1.9s ease 0;
+  transition: all 1.8s ease 0;
 }
 .circle-four.active {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 1.9s ease 0s;
+  transition: all 1.8s ease 0s;
 }
 
 .circle__active-title {
@@ -517,7 +537,7 @@ p {
 .circle__active-second {
   position: relative;
   margin-right: 5px;
-  transform: translate(0px, 140%);
+  transform: translate(0px, 100%);
   opacity: 0;
   transition: all 1.3s ease 0;
 }
@@ -530,7 +550,7 @@ p {
 .circle__active-three {
   position: relative;
   margin-right: 5px;
-  transform: translate(0px, 150%);
+  transform: translate(0px, 110%);
   opacity: 0;
   transition: all 1.6s ease 0;
 }
@@ -543,7 +563,7 @@ p {
 .circle__active-four {
   position: relative;
   margin-right: 5px;
-  transform: translate(0px, 160%);
+  transform: translate(0px, 120%);
   opacity: 0;
   transition: all 1.9s ease 0;
 }
@@ -635,6 +655,9 @@ p {
   opacity: 1;
   transition: all 0.8s ease 0s;
 }
+.cover__row-item.active:hover {
+  transform: scale(1.1);
+}
 .cover__row-items {
   padding: 52px 52px 52px 52px;
   background: #EDEDED;
@@ -648,7 +671,10 @@ p {
 .cover__row-items.active {
   transform: translate(0px, 15%) rotate(-2.16deg);
   opacity: 1;
-  transition: all 3s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.cover__row-items.active:hover {
+  transform: scale(1.1) translate(0px, -30%);
 }
 .cover__row-itemt {
   padding: 52px 52px 52px 52px;
@@ -663,7 +689,10 @@ p {
 .cover__row-itemt.active {
   transform: translate(0px, -20%) rotate(-12.79deg);
   opacity: 1;
-  transition: all 3s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.cover__row-itemt.active:hover {
+  transform: scale(1.1) translate(0px, -30%);
 }
 
 .second-item {

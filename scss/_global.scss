@@ -19,26 +19,28 @@ body, html {
 }
 // BUTTONS
 .button {
-    padding: 11px 10px 10px 10px;
+    padding: 11px 20px 10px 20px;
     background: #27282D;
     border-radius: 7px;
     color: #fff;
     font-weight: 400;
     text-align: center;
     transition: all .3s;
+    width: 204px;
     &:hover {
         box-shadow: 6px 5px #E6FF28;
         color: #E6FF28;
     }
 }
 .btn {
-    padding: 11px 10px 10px 10px;
+    padding: 11px 50px 10px 50px;
     background: #fff;
     border: 1px solid #27282D;
     border-radius: 7px;
     font-weight: 400;
     text-align: center;
     transition: all .3s;
+    width: 204px;
     &:hover {
         box-shadow: 6px 5px #E6FF28;
     }
