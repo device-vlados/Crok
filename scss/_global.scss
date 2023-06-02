@@ -2,9 +2,9 @@
 body, html {
     font-family: 'Roboto Mono', monospace;
     font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #000;
-    line-height: 18px;
+    line-height: 21px;
 }
 .wrapper {
     min-height: 100%;
@@ -13,34 +13,34 @@ body, html {
 }
 .container {
     max-width: 1270px;
-    padding: 0 15px;
+    padding: 0 30px;
     margin: 0 auto;
     height: 100%;
 }
 // BUTTONS
 .button {
-    padding: 11px 20px 10px 20px;
+    padding: 9px 30px 10px 30px;
     background: #27282D;
     border-radius: 7px;
     color: #fff;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
+    height: 40px;
     transition: all .3s;
-    width: 204px;
     &:hover {
         box-shadow: 6px 5px #E6FF28;
         color: #E6FF28;
     }
 }
 .btn {
-    padding: 11px 10px 10px 10px;
+    padding: 9px 30px 10px 30px;
     background: #fff;
     border: 1px solid #27282D;
     border-radius: 7px;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
+    height: 40px;
     transition: all .3s;
-    width: 204px;
     &:hover {
         box-shadow: 6px 5px #E6FF28;
     }
@@ -49,8 +49,8 @@ body, html {
 h1 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 47px;
+    font-size: 48px;
+    line-height: 52.8px;
     text-align: center;
     max-width: 960px;
     margin: 0 auto;
@@ -58,27 +58,27 @@ h1 {
 h2 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 36px;
+    line-height: 47.48px;
 }
 p {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18.77px;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
 }
 // MEDIA TEXT
-// 550
-@media (max-width: 550px) {
+// 650
+@media (max-width: 650px) {
     h1 {
-        font-size: 20px;
+        font-size: 23px;
         line-height: 29px;
     }
     h2 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
     }
     p {

@@ -16,7 +16,7 @@
     align-items: center;
     &-title {
         text-align: left;
-        max-width: 400px;
+        max-width: 520px;
     }
     &-text {
         text-align: left;
@@ -56,6 +56,7 @@
 .build__scroll {
     display: flex;
     align-items: center;
+    margin-left: 500px;
     width: 4421px;
     padding-right: 500px;
     &-item {
@@ -163,13 +164,12 @@
     justify-content: center;
     &-list {
         display: grid;
-        grid-template: repeat(3, 200px) / repeat(3, 380px);
+        grid-template: repeat(3, auto) / repeat(3, auto);
         gap: 47px;
     }
     &-item {
         text-align: left;
         & h2 {
-            white-space: nowrap;
             font-size: 20px;
             line-height: 22px;
             margin-bottom: 24px;
@@ -184,37 +184,18 @@
     }
 }
 // MEDIA
-// 1300
-@media (max-width: 1300px) {
-    .crokio__grid {
-        &-list{
-            display: grid;
-            grid-template: repeat(5, 200px) / repeat(2, 380px);
-            gap: 47px;
-        }
-    }
-}
 // 850
 @media (max-width: 850px) {
     .crokio__grid {
-        &-list{
+        &-list {
             display: grid;
-            grid-template: repeat(9, 220px) / repeat(1, 300px);
-            gap: 20px;
+            grid-template: repeat(9, auto) / repeat(1, auto);
+            gap: 47px;
         }
         &-item {
-            & h2 {
-                white-space:normal;
-                text-align: center;
-            }
             & p {
-                text-align: center;
                 white-space: normal;
             }
-        }
-        &-img {
-            display: flex;
-            justify-content: center;
         }
     }
 }
@@ -230,15 +211,15 @@
 }
 .qoutcomes__scrolls {
     margin-top: 10px;
-    margin-left: -50px;
+    margin-left: -750px;
     display: flex;
     align-items: center;
-    width: 1421px;
+    width: 5421px;
     z-index: 5;
     font-size: 35px;
     cursor: default;
     color: #EDEDED;
-    animation: scr 250s linear infinite;
+    animation: scr 150s linear infinite;
     &-item {
         width: 800px;
         text-align: center;
@@ -260,13 +241,13 @@
 }
 .qoutcomes__scroll {
     margin-top: 10px;
-    margin-left: -950px;
+    margin-left: -700px;
     display: flex;
     align-items: center;
-    width: 3421px;
+    width: 5421px;
     font-size: 40px;
     cursor: default;
-    animation: scrr 250s linear infinite;
+    animation: scrr 150s linear infinite;
     &-item {
         width: 800px;
         text-align: center;
@@ -286,19 +267,25 @@
     }
 }
 @keyframes scr {
+    0% {
+        transform: translate3d(1000px, 0, 0);
+    }
     100% {
         transform: translate3d(-3000px, 0, 0);
     }
     0% {
-        transform: translate3d(0%, 0, 0);
+        transform: translate3d(1000px, 0, 0);
     }
 }
 @keyframes scrr {
+    0% {
+        transform: translate3d(1000px, 0, 0);
+    }
     100% {
-        transform: translate3D(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
     }
     0% {
-        transform: translate3d(0%, 0, 0);
+        transform: translate3d(500px, 0, 0);
     }
 }
 // MEDIA
@@ -329,7 +316,7 @@
     justify-content: center;
 }
 .business__inner {
-    margin: 0 30px 0 30px;
+    margin: 0 15px 0 15px;
 }
 .business__box {
     padding: 75px 37px 60px 37px;
@@ -359,12 +346,34 @@
 }
 .business__btn {
     &-button {
+        width: 208px;
         margin-right: 31px;
+    }
+    &-btn {
+        width: 208px;
     }
 }
 // MEDIA
+// 750
+@media (max-width: 750px) {
+    .business__btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-button {
+            width: 208px;
+            margin: 0 0 26px 0;
+        }
+        &-btn {
+            width: 100%;
+        }
+    }
+}
 // 550
 @media (max-width: 550px) {
+    .business__content-title {
+        font-size: 20px;
+    }
     .business__box {
         padding: 55px 10px 40px 10px;
     }
