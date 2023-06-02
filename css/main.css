@@ -885,19 +885,18 @@ p {
 .build__scroll {
   display: flex;
   align-items: center;
-  margin-left: 500px;
-  width: 4421px;
-  padding-right: 500px;
+  margin-left: 20px;
+  width: 5421px;
 }
 .build__scroll-item {
-  width: 220px;
+  width: 270px;
   border: 1px solid #27282D;
   text-align: center;
   border-radius: 25px;
   margin-right: 20px;
   padding: 10px;
   transform: translate3d(0, 0, 0);
-  animation: scrl 15s linear infinite;
+  animation: scrl 35s linear infinite;
   transition: all 0.4s;
   cursor: default;
 }
@@ -908,11 +907,11 @@ p {
 }
 
 @keyframes scrl {
-  0% {
-    transform: translate3d(0%, 0, 0);
-  }
   100% {
-    transform: translate3d(-400%, 0, 0);
+    transform: translate3d(-2500px, 0, 0);
+  }
+  0% {
+    transform: translate3d(0, 0, 0);
   }
 }
 .build__grid {
@@ -1546,8 +1545,8 @@ p {
 .qoutcomes__scrolls-item {
   width: 800px;
   text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 25px 10px;
   white-space: nowrap;
   transform: translate3d(0, 0, 0);
@@ -1591,25 +1590,19 @@ p {
 }
 
 @keyframes scr {
-  0% {
-    transform: translate3d(1000px, 0, 0);
-  }
   100% {
-    transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-2500px, 0, 0);
   }
   0% {
-    transform: translate3d(1000px, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 @keyframes scrr {
-  0% {
-    transform: translate3d(1000px, 0, 0);
-  }
   100% {
-    transform: translate3d(3000px, 0, 0);
+    transform: translate3d(2500px, 0, 0);
   }
   0% {
-    transform: translate3d(500px, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 @media (max-width: 550px) {
